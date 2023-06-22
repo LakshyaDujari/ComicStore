@@ -1,0 +1,95 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Finger+Paint&family=PT+Sans+Narrow&family=Potta+One&family=Roboto:wght@500&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: background .5s;
+}
+.navbar:hover{
+    background-color: azure;
+}
+nav.left{
+   flex: .5;
+    text-align: left;
+}
+nav.left ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav.left ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-style: italic;
+    font-size: 24px;
+    font-family:fantasy ;
+}
+nav.right{
+   flex: .5;
+    text-align: right;
+}
+nav.right ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav.right ul li{
+    padding-right: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    font-style: italic;
+    font-size: 24px;
+    font-family: fantasy;
+}
+a{
+    text-decoration-color: black;
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: 	#000000;
+}
+.container{
+    margin: 0;
+    max-height: 950;
+    max-width: 1200;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    justify-content: flex-start;
+
+}
+.col-3{
+    max-width:100%;
+    max-height: 100%;
+    padding: 10px 0;
+    margin: auto;
+    justify-content: flex-end;
+}
+.btn{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 30px;
+    transition: background .5s;
+    font-family: 'Finger Paint', cursive;
+}
+.btn:hover{
+    background: #dca417;
+    color: black;
+}
+.Header{
+    background: radial-gradient(#f5f0e4,#ffebb9);
+}

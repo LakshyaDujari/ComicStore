@@ -1,0 +1,345 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display&family=Comic+Neue:ital,wght@1,700&family=Finger+Paint&family=PT+Sans+Narrow&family=Potta+One&family=Roboto:wght@500&display=swap&family=Bungee&display=swap&family=Montserrat:wght@200&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+.navbar{
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    transition: background .5s;
+}
+.navbar:hover{
+    background-color: azure;
+}
+nav.left{
+   flex: .5;
+    text-align: left;
+}
+nav.left ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav.left ul li{
+    display: inline-block;
+    margin-right: 20px;
+    font-style: italic;
+    font-size: 24px;
+    font-family:fantasy ;
+}
+nav.right{
+   flex: .5;
+    text-align: right;
+}
+nav.right ul{
+    display: inline-block;
+    list-style-type: none;
+}
+nav.right ul li{
+    padding-right: 10px;
+    display: inline-block;
+    margin-right: 20px;
+    font-style: italic;
+    font-size: 24px;
+    font-family: fantasy;
+}
+a{
+    text-decoration-color: black;
+    text-decoration: none;
+    color: black;
+}
+p{
+    color: 	#000000;
+}
+.container{
+    margin: 0;
+    max-height: 950;
+    max-width: 1200;
+}
+.row{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+.col-2{
+    flex-basis: 50%;
+    min-width: 300px;
+    justify-content: flex-start;
+
+}
+.col-3{
+    max-width:100%;
+    max-height: 100%;
+    
+    padding: 10px 0;
+    margin: auto;
+    justify-content: flex-end;
+}
+.btn{
+    display: inline-block;
+    background-color: black;
+    color: white;
+    font-size: 32px;
+    padding: 15px;
+    margin: 5px;
+    border-radius: 30px;
+    transition: background .5s;
+    font-family: 'Finger Paint', cursive;
+}
+.btn:hover{
+    background: #dca417;
+    color: black;
+}
+.Header{
+    background: radial-gradient(#f5f0e4,#ffebb9);
+}
+.categories{
+    margin:7opx 0;
+}
+.col-4{
+    flex-basis: 30%;
+    min-width: 250px;
+    margin-bottom: 30px;
+    box-shadow: 0 0 20px 0px rgba(0,0,0,0.1);
+    cursor:pointer;
+    transition: transform.5s;
+}
+.col-4:hover{
+    transform: translateY(-10px);
+}
+.col-4 img{
+    width: 100%;
+    height: 100%;
+    padding: 20px;
+}
+.small-container{
+    max-width: 1080px;
+    margin: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+}
+.col-5{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom:35px;
+    transition: .5s;
+    line-height: 23px;
+}
+.col-5 img{
+    width: 100%;
+    height: auto;
+}
+.tittle{
+    text-align: center;
+    margin: 0 auto;
+    position: relative;
+    line-height: 60px;
+    font-family: 'Comic Neue', cursive;
+    color: #3f403b;
+}
+.tittle ::after{
+    content: '';
+    background: #ff523b;
+    width: 80px;
+    height: 5px;
+    border-radius: 5px;
+    position: absolute;
+    bottom: 0;
+    left: 45%;
+    transform: translateX(-50);
+}
+h4{
+    color: #555;
+    font-weight: normal;
+    font-family: 'Potta One', cursive;
+}
+.col-5 p{
+    font-size: 14px;
+}
+.ratting .fa{
+    color: #ff523b;
+}
+.col-5 :hover{
+    transform: translateY(-5px);
+}
+/*-------------------offer----------------*/
+.offer{
+    margin-top: 80px;
+    padding: 30px,0;
+}
+.offer-title{
+    line-height: 30px;
+    text-align: center;
+    font-size: 32px;
+    font-family: 'Bungee', cursive;
+}
+/*-------------------brands----------------*/
+.brands{
+    margin: 100px auto;
+}
+.col-6{
+    flex-basis: 25%;
+    padding: 10px;
+    min-width: 200px;
+    margin-bottom:50px;
+    transition: .5s;
+    width=160px;
+}
+.col-6 img{
+    width: 100%;
+    height: 80%;
+    cursor: pointer;
+    filter: grayscale(100%);
+}
+.col-6 img:hover{
+    filter: grayscale(0);
+}
+/*-------------------Footer----------------*/
+.footer{
+    background: #000;
+    color:aliceblue;
+    font-size: 14px;
+    padding: 60px 0 20px;
+    
+}
+.footer p{
+    color: aliceblue;
+}
+.footer h3{
+    color: aliceblue;
+    margin-bottom: 20px;
+}
+.footer-col-1,.footer-col-2,.footer-col-3,.footer-col-4{
+    min-width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-1{
+    flex-basis: 30%;
+}
+.footer-col-2{
+    flex: 1;
+    text-align: center;
+}
+.footer-col-2 img{
+    width: 250px;
+    margin-bottom: 20px;
+}
+.footer-col-3,.footer-col-4{
+    flex-basis: 12%;
+    text-align: center;
+}
+ul{
+    list-style-type: none;
+}
+
+/*---------------------All Products--------------*/
+.row-2{
+    justify-content: space-between;
+    margin-top: 35px;
+    margin-bottom: 10px;
+    margin-left: auto;
+    margin-right: auto;
+} 
+.row-2 h2{
+    font-family: 'Bungee', cursive;
+    font-size: normal;
+}
+select{
+    border: 1px solid #ff523b;
+    padding:5px;
+}
+select:focus{
+    outline: none;
+}
+.pge-btn{
+    margin: 0 auto 80px;
+}
+.pge-btn span{
+    display:inline-block;
+    border: 1px solid #ff523b; 
+    margin-left: 10px;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 40px;
+    cursor: pointer;
+    transition: .5s;
+}
+.pge-btn span:hover{
+    background: #e3cfcf;
+}
+/*-----------------------Single Product Details-------------*/
+.Single-Product{
+    margin-top: 10px;
+}
+.Single-Product .col-2 img{
+    padding: 0;
+}
+.Single-Product .col-2{
+    padding: 20px;
+}
+.Single-Product h4{
+    margin:5px;
+    font-size: 22px;
+    font-weight: bold;
+}
+.Single-Product h1{
+    font-family: 'Bungee', cursive;
+    font-weight: 100;
+}
+.Single-Product h3{
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-family: 'Bungee', cursive;
+}
+.Single-Product p{
+    font-family: 'Montserrat', sans-serif;
+}
+.Single-Product input{
+    width: 50px;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 20px;
+    margin-right: 10px;
+    border = 1px;
+    border-color: solid #ff523b;
+}
+input:focus{
+    outline: none;
+}
+/*---------------------------------Contact Us------------------------*/
+.contact-form{
+    background: #f0f0e4;
+    padding: 30px;
+    min-width: 250px;
+    text-align: center;
+    box-shadow: 0 0 20px 0px rgba(179,179,168,0.5);
+    cursor:pointer;
+}
+.contact-form input{
+    margin: 10px;
+    padding: 5px;
+    width: 300px;
+    height: 40px;
+    border: 1px solid #52524e;
+}
+.contact-form textarea{
+    margin: 10px;
+    padding: 5px;
+    border: 1px solid #52524e;
+}
+.contact-form h2{
+    font-family: 'Bungee', cursive;
+    font-weight: 100;
+}
+.contact-form .btn{
+    margin-top: 15px;
+    font-size: 15px; 
+    border-radius: 20px;
+    padding: 10px;
+}
